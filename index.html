@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店铺官网</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+<!-- 导航栏 -->
+<nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h2 class="text-xl font-bold text-primary">XX门店</h2>
+        <div class="hidden md:flex gap-6">
+            <a href="#home" class="hover:text-primary transition">首页</a>
+            <a href="#about" class="hover:text-primary transition">店铺简介</a>
+            <a href="#goods" class="hover:text-primary transition">主营产品</a>
+            <a href="#contact" class="hover:text-primary transition">联系我们</a>
+        </div>
+        <button class="md:hidden text-xl">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- 首页横幅 -->
+<section id="home" class="pt-20 bg-primary text-white">
+    <div class="container mx-auto px-4 py-20 text-center">
+        <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-4">品质好物，贴心服务</h1>
+        <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto">线下实体门店，靠谱货源，性价比优选，欢迎到店体验选购</p>
+        <a href="#contact" class="inline-block bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">立即咨询</a>
+    </div>
+</section>
+
+<!-- 店铺简介 -->
+<section id="about" class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">店铺简介</h2>
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="bg-gray-200 h-72 rounded-xl flex items-center justify-center text-gray-500">
+                此处替换门店实拍图
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">用心经营多年实体门店</h3>
+                <p class="text-gray-600 leading-relaxed mb-4">本店专注相关产品销售与配套服务，严控产品质量，拒绝劣质商品。线下实体经营，支持实地看货，售后保障完善，多年来收获大量老客户好评。</p>
+                <p class="text-gray-600 leading-relaxed">我们坚持薄利多销，以真诚对待每一位顾客，线上线下同步服务，足不出户也可咨询下单。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品展示 -->
+<section id="goods" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">主营产品</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 商品卡片1 -->
+            <div class="border rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                <div class="h-52 bg-gray-200 flex items-center justify-center text-gray-500">产品图1</div>
+                <div class="p-4">
+                    <h4 class="font-bold text-lg mb-2">产品名称一</h4>
+                    <p class="text-gray-500 text-sm mb-3">简短产品介绍文字</p>
+                    <span class="text-primary font-bold">¥XXX</span>
+                </div>
+            </div>
+            <!-- 商品卡片2 -->
+            <div class="border rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                <div class="h-52 bg-gray-200 flex items-center justify-center text-gray-500">产品图2</div>
+                <div class="p-4">
+                    <h4 class="font-bold text-lg mb-2">产品名称二</h4>
+                    <p class="text-gray-500 text-sm mb-3">简短产品介绍文字</p>
+                    <span class="text-primary font-bold">¥XXX</span>
+                </div>
+            </div>
+            <!-- 商品卡片3 -->
+            <div class="border rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                <div class="h-52 bg-gray-200 flex items-center justify-center text-gray-500">产品图3</div>
+                <div class="p-4">
+                    <h4 class="font-bold text-lg mb-2">产品名称三</h4>
+                    <p class="text-gray-500 text-sm mb-3">简短产品介绍文字</p>
+                    <span class="text-primary font-bold">¥XXX</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 联系板块 -->
+<section id="contact" class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">联系我们</h2>
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+            <div class="p-6 bg-white rounded-xl shadow-sm">
+                <i class="fa fa-phone text-3xl text-primary mb-4"></i>
+                <h4 class="font-bold text-lg mb-2">咨询电话</h4>
+                <p class="text-gray-600">13800138000</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-sm">
+                <i class="fa fa-map-marker text-3xl text-primary mb-4"></i>
+                <h4 class="font-bold text-lg mb-2">门店地址</h4>
+                <p class="text-gray-600">XX市XX区XX街道XX号</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-sm">
+                <i class="fa fa-wechat text-3xl text-primary mb-4"></i>
+                <h4 class="font-bold text-lg mb-2">微信咨询</h4>
+                <p class="text-gray-600">微信同手机号</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="bg-gray-800 text-white py-8 text-center">
+    <p>© 2026 XX门店 版权所有</p>
+</footer>
+</body>
+</html>
